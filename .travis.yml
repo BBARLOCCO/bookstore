@@ -4,7 +4,7 @@ jdk:
 before_install:
  - chmod +x gradlew 
 deploy:
-  provider: heroky
-  api-key:
+  provider: heroku
+  api_key:
     secure: $HEROKU_TOKEN
-  app: bookstore-demo-store
+  app: "bookstore-demo-store"
