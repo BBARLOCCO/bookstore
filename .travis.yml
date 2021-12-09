@@ -6,5 +6,5 @@ before_install:
 
 deploy:
   provider: heroku
-  api_key: $HEROKU_API_KEY
+  api_key: $HEROKU_TOKEN
   app: "brunos-demo-store"
