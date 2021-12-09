@@ -3,3 +3,8 @@ jdk:
   - openjdk8
 before_install:
  - chmod +x gradlew 
+deploy:
+  provider: heroky
+  api-key:
+    secure: $HEROKU_TOKEN
+  app: bookstore-demo-store
