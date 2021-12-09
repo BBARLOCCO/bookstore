@@ -5,6 +5,7 @@ before_install:
  - chmod +x gradlew
 
 deploy:
+  skip_cleanup: true
   provider: heroku
   api_key: $HEROKU_TOKEN
   app: "brunos-demo-store"
