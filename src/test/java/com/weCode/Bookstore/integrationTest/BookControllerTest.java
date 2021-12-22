@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(
 		classes = BookstoreApplication.class,
 		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@DirtiesContext(classMode = ClassMode.AFTER_EACH_TEST_METHOD )
+@DirtiesContext(classMode = ClassMode.BEFORE_EACH_TEST_METHOD )
 public class BookControllerTest {
 
 	@LocalServerPort
