@@ -1,1 +1,1 @@
-insert into book(id,author, title,description,release_year) values('d742ff94-5e55-11ec-bf63-0242ac130002', 'JP', 'Ikigai', 'The Japanese secret to long and happy life', 2018);
+insert into book(id,author, title,description,release_year) values('d742ff94-5e55-11ec-bf63-0242ac130005', 'JP', 'Ikigai', 'The Japanese secret to long and happy life', 2018);

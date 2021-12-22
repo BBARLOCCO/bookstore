@@ -2,6 +2,9 @@ package com.weCode.Bookstore.integrationTest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
+
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
@@ -17,7 +20,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(
 		classes = BookstoreApplication.class,
 		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@DirtiesContext(classMode = ClassMode.BEFORE_EACH_TEST_METHOD )
+@DirtiesContext(classMode = ClassMode.AFTER_EACH_TEST_METHOD )
+@AutoConfigureTestDatabase(replace = Replace.ANY)
 public class BookControllerTest {
 
 	@LocalServerPort
